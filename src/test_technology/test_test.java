@@ -6,7 +6,8 @@
 
 package test_technology;
 
-import java.util.Stack;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  *
@@ -14,35 +15,16 @@ import java.util.Stack;
  */
 public class test_test {
     
-    public static boolean chkLegal(String A) {
-        Stack<Character> stack = new Stack<Character>();
-        for(int i = 0; i < A.length(); i++){
-            Character ch = A.charAt(i);
-            if(ch == '{' || ch == '[' || ch == '('){
-                stack.push(ch);
-                continue;
-            }
-            if(!stack.isEmpty()){
-                Character c = stack.peek();
-                if(ch == '}' && c == '{')
-                    stack.pop();
-                else if(ch == ']' && c == '[')
-                    stack.pop();
-                else if(ch == ')' && c == '(')
-                    stack.pop();
-            }
-        }
-        if (stack.isEmpty())
-            return true;
-        return false;
-    }
+    
     
     
     public static void main(String[] args) {
-        String right = "(90+5)*a[i]]";
-        String notRight = "(90+5))*a[i]";
-        System.out.println(chkLegal(right));
-        System.out.println(chkLegal(notRight));
+      
+         String x =null;
+            x.equals("");
+        
+        System.out.println("sdfadfs");
+       
         
     }
     
