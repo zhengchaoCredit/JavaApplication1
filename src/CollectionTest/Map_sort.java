@@ -38,9 +38,6 @@ public class Map_sort {
             System.out.println(entry.getKey()+""+entry.getValue());
         }
         
-        
-        
-        
         List<Map.Entry<String, String>> list = new LinkedList<>(map.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, String>>() {
             
