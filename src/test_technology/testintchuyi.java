@@ -19,14 +19,12 @@ public class testintchuyi {
     
     
      public static void main(String[] args) {
-         Date date = new Date();
+         String x = "15487834A64E2D91EFC94EF2367^1.00^INIT^20161230144930^20161230144930";
          
-         
-         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");  
-        String tim = sdf.format(date);  
+         String[] result= x.split("\\^");
         
                          
-        System.out.println(tim);
+        System.out.println(result[2]);
     }
     
 }
