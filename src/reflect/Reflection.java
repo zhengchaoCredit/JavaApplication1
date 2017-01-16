@@ -6,28 +6,27 @@
 
 package reflect;
 
-import java.lang.reflect.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class Reflection {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-//            Class c=Class.forName("java.util.HashMap");
-//            Object o=c.newInstance();
-//            Method[] methods=c.getDeclaredMethods();
-//            for(Method method:methods){
-//                System.out.println(method);
-//            }
-//            
-//            
-//            Method m1=c.getMethod("put", Object.class,Object.class);
-//            for(int i =0;i<3;i++){
-//                System.out.println("*****************");
-//            }
-//            m1.invoke(o, "name","zhengchao");
-//            m1.invoke(o, "age",26);
-//            
-//            System.out.println(o);
+            Class c=Class.forName("java.util.HashMap");
+            Object o=c.newInstance();
+            Method[] methods=c.getDeclaredMethods();
+            for(Method method:methods){
+                System.out.println(method);
+            }
+            
+            
+            Method m1=c.getMethod("put", Object.class,Object.class);
+            m1.invoke(o, "name","zhengchao");
+            m1.invoke(o, "age",26);
+            System.out.println(o);
+            
+            
             
             
             Class class1 = null;
