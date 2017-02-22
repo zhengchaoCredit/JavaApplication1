@@ -20,10 +20,10 @@ public class test_test {
     
     public static void main(String[] args) {
       
-         String x =null;
-            x.equals("");
-        
-        System.out.println("sdfadfs");
+        String s1 = new StringBuilder("go").append("od").toString();
+        System.out.println(s1.intern() == s1); //true
+        String s2 = new StringBuilder("ja") .append("va").toString();
+        System.out.println(s2.intern() == s2); //false
        
         
     }
