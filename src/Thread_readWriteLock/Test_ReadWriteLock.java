@@ -71,8 +71,8 @@ public class Test_ReadWriteLock {
            shutdownNow()：执行后不再接受新任务，如果有等待任务，移出队列；有正在执行的，尝试停止之；
         */
         pool.shutdown();
-        pool.awaitTermination(30, TimeUnit.SECONDS);  //停30s再执行后面的逻辑
+        pool.awaitTermination(30, TimeUnit.SECONDS);  
         
-        System.out.println(account.getCash());
+        System.out.println("%%%%%"+account.getCash());
     }
 }
