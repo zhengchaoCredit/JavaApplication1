@@ -82,6 +82,9 @@ public class BigIntAdd {
     
     public static void main(String[] args) {
         
+        int OP_ACCEPT = 1 << 4;
+         System.out.println("{OP_ACCEPT:"+OP_ACCEPT);  
+        
         String str = bigAdd("100000000000009","900000000000001");
                          
         System.out.println("100000000000000");
